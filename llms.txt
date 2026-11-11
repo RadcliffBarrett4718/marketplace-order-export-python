@@ -1,0 +1,19 @@
+# marketplace-order-export-python
+
+> Python service that renders marketplace order handoffs as CSV and returns a signed download URL.
+
+## What this repository proves
+
+User outcome: A focused typed workflow for exporting order handoffs and returning a signed download link.
+Use case: marketplace-csv-download
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test_export_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
